@@ -26,7 +26,7 @@ while(True):
 	f.close()
 
 	# Upload file
-	s = ftplib.FTP('spikingcircuits.com','u62317176','beyond08')
+	s = ftplib.FTP('yourserver.com','username','password')
 	f = open('temperatures.txt','rb')
 	s.storbinary('STOR temperatures.txt', f) 
 	f.close()
